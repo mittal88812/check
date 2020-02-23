@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>first</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="jQuery.js"></script>
+    </head>
+    <body>
+      <div class="container">
+        <input id="in" type="text" placeholder="enter something"/>
+        <button onclick="add()">submit</button>
+      </div>
+      <div id="root">
+        <p id="para"></p>
+
+      </div>
+      <script type="text/javascript">
+        var items=[];
+        var msg="";
+        var i,r=0,l,l2=0;
+        //t=document.getElementById("in").value;
+        l=0;
+        console.log(items);
+        
+
+        
+        function add(){
+          var t=document.getElementById("in");
+          var l1=items.length;
+          items[l1]=t.value;
+          console.log(items);
+          for(i=l;i<items.length;i++){
+            r=i+1;
+            msg+="item"+r+":";
+            msg+=items[i]+ "<br />";
+          }
+          document.getElementById("para").innerHTML=msg;
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </script>
+
+      
+    
+    </body>
+</html>
